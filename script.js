@@ -41,11 +41,15 @@ function closeLightbox(){
   document.getElementById("lightbox").style.display = "none";
 }
 
-document.getElementById("lightbox").addEventListener("click", function(e){
-  if(e.target === this){
-    closeLightbox();
-  }
-});
+const lightbox = document.getElementById("lightbox");
+
+if (lightbox) {
+  lightbox.addEventListener("click", function(e){
+    if(e.target === this){
+      closeLightbox();
+    }
+  });
+}
 
 
 
@@ -62,7 +66,7 @@ const observer = new IntersectionObserver((entries) => {
 serviceRows.forEach((row) => {
   observer.observe(row);
 });
-const serviceRows = document.querySelectorAll(".service-row");
+
 
 window.addEventListener("scroll", () => {
   serviceRows.forEach((row) => {
@@ -75,3 +79,30 @@ window.addEventListener("scroll", () => {
 });
 
 serviceRows.forEach((row) => row.classList.add("show"));
+const galleryImages = [
+  "images/frontsalon.jpeg",
+  "images/seat.jpeg",
+  "images/kidg.jpeg",
+  "images/hairbotoxl.jpeg",
+  "images/glimpse.jpeg"
+];
+
+let currentImage = 0;
+
+function showImage() {
+  document.getElementById("galleryImage").src =
+    galleryImages[currentImage];
+}
+
+function nextImage() {
+  currentImage = (currentImage + 1) % galleryImages.length;
+  showImage();
+}
+
+function prevImage() {
+  currentImage =
+    (currentImage - 1 + galleryImages.length) %
+    galleryImages.length;
+  showImage();
+}
+showImage();

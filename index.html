@@ -55,7 +55,7 @@
     </nav>
 
     <div id="mobile-menu" class="hidden border-t border-white/10 bg-[#070604]/95 px-4 pb-5 pt-2 backdrop-blur-xl lg:hidden">
-      <div class="mx-auto grid max-w-7xl gap-2 text-sm font-semibold text-[#d8cdb8]">
+      <div class="flex flex-col space-y-4 px-4 py-6 text-base font-semibold text-[#d8cdb8]">
         <a href="#why" class="rounded-lg px-3 py-3 hover:bg-white/5 hover:text-[#f1c76b]">Why Marvel</a>
         <a href="#offers" class="rounded-lg px-3 py-3 hover:bg-white/5 hover:text-[#f1c76b]">Offers</a>
         <a href="#services" class="rounded-lg px-3 py-3 hover:bg-white/5 hover:text-[#f1c76b]">Services</a>
@@ -420,36 +420,42 @@
       </div>
     </section>
 
-    <!-- Gallery Section -->
-   <section id="gallery" class="py-32 px-6 bg-[#080808]">
+    <!-- GALLERY -->
+<section id="gallery" class="py-24 px-6 bg-[#070604]">
 
-  <div class="text-center mb-20">
-    <p class="text-amber-500 uppercase tracking-[0.3em] text-sm">
+  <div class="max-w-4xl mx-auto text-center">
+
+    <p class="text-amber-500 uppercase tracking-[0.3em] text-sm mb-4">
       Gallery
     </p>
 
-    <h2 class="text-5xl font-bold text-white mt-4">
-      Our Transformations
+    <h2 class="text-4xl md:text-5xl font-bold mb-10">
+      Inside Marvel Salon
     </h2>
-  </div>
 
-  <div class="gallery-grid">
+    <div class="flex items-center justify-center gap-4">
 
-    <img id="frontsalon-image" src="images/frontsalon.jpeg" class="gallery-img">
-    <img id="glimpse-image" src="images/glimpse.jpeg" class="gallery-img tall">
-    <img id ="kid-image" src="images/kidg.jpeg" class="gallery-img">
-    <img id ="reception-image" src="images/reception.jpeg" class="gallery-img tall">
-    <img id ="color-image" src="images/color.jpeg" class="gallery-img tall">
-    <img id ="seat-image" src="images/seat.jpeg" class="gallery-img">
-    <img id ="hairbotoxl-image" src="images/hairbotoxl.jpeg" class="gallery-img">
-    
+  <button
+    onclick="prevImage()"
+    class="w-12 h-12 rounded-full bg-[#c8a45d] text-black font-bold text-xl hover:scale-110 transition">
+    ←
+  </button>
 
-    
+  <img
+    id="galleryImage"
+    src="images/frontsalon.jpeg"
+    class="w-[150px] h-[150px] md:w-[200px] md:h-[200px] object-cover rounded-3xl shadow-2xl border border-[#c8a45d]/20"
 
-  </div>
+  >
 
+  <button
+    onclick="nextImage()"
+    class="w-12 h-12 rounded-full bg-[#c8a45d] text-black font-bold text-xl hover:scale-110 transition">
+    →
+  </button>
+
+</div>
 </section>
-
     <!-- Testimonials -->
     <section id="reviews" class="py-24 px-6 bg-[#0b0b0b]">
 
@@ -545,6 +551,15 @@
     id="lightboxImg"
     class="max-w-[95%] max-h-[90vh] rounded-xl">
 </div>
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const menuDropdown = document.getElementById('menu-dropdown');
+
+  // Listens for both desktop clicks and mobile taps
+  menuBtn.addEventListener('click', () => {
+    menuDropdown.classList.toggle('hidden');
+  });
+</script>
 
 </body>
 </html>

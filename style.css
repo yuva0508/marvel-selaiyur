@@ -1726,7 +1726,7 @@
 
 /* Change the dot to a hashtag */
 #gallery {
-  margin-bottom: 130px; /* This will now create the gap successfully */
+  margin-bottom: 150px; /* This will now create the gap successfully */
 }
 .gold-glow{
   position:absolute;
