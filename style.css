@@ -1726,7 +1726,19 @@
 
 /* Change the dot to a hashtag */
 #gallery {
-  margin-bottom: 150px; /* This will now create the gap successfully */
+  margin-bottom: 120px; /* This will now create the gap successfully */
+}
+#products{
+  margin-bottom: 120px;
+}
+#brands{
+  margin-bottom: 90px;
+}
+#transformations{
+  margin-bottom: 100px;
+}
+#services{
+  margin-bottom: 50px;
 }
 .gold-glow{
   position:absolute;
@@ -2075,7 +2087,7 @@
    width:auto;
 
    object-fit:contain;
-   transiition:.3s;
+   transition:.3s;
 
 }
 
@@ -2364,7 +2376,7 @@
 
     justify-content:center;
 
-    gap:25px;
+    gap:30px;
 
 }
 
@@ -2477,3 +2489,4 @@
 .brand-showcase{
     z-index: auto !important;
 }
+

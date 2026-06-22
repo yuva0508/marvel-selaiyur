@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         });
 
-        viewBtn.innerText = "View All Services";
+        viewBtn.innerText = "View All";
         expanded = false;
     }
 
@@ -155,12 +155,12 @@ const revealObserver = new IntersectionObserver((entries) => {
     });
 
 },{
-    threshold:0.15
+    threshold:0.02
 });
 
 cardsReveal.forEach((card,index)=>{
 
-    card.style.transitionDelay = `${index * 80}ms`;
+    card.style.transitionDelay = `${index * 20}ms`;
 
     revealObserver.observe(card);
 
@@ -399,7 +399,7 @@ new IntersectionObserver((entries)=>{
 
     });
 
-},{threshold:.2});
+},{threshold:.1});
 
 const reviewSection =
 document.querySelector("#reviews");
@@ -410,10 +410,16 @@ if(reviewSection){
 
 }
 const galleryImages = [
-    "images/g1.jpg",
-    "images/g2.jpg",
-    "images/seat.jpeg",
-    "images/g3s.jpg"
+    "images/n2.jpeg",
+    "images/n1.jpeg",
+    "images/n4.jpeg",
+    "images/n5.jpeg",
+    "images/n6.jpeg",
+    "images/n7.jpeg",
+    "images/n8.jpeg",
+    "images/n9.jpeg",
+    "images/n10.jpeg",
+    "images/n11.jpeg"
 ];
 
 let galleryIndex = 0;
