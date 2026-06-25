@@ -2451,4 +2451,12 @@
 .brand-showcase{
     z-index: auto !important;
 }
+#services,
+#transformations,
+#gallery,
+#brands,
+#products,
+#reviews{
+    scroll-margin-top: 100px;
+}
 
