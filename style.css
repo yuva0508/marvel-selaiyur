@@ -2305,7 +2305,8 @@
 
     text-align:center;
 
-    padding:40px;
+    padding: 40px;
+    
 
     border-radius:30px;
 
@@ -2365,109 +2366,70 @@
 
 }
 .gallery-wrapper{
-
-    max-width:900px;
-
-    margin:auto;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    gap:30px;
-
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
 }
 
 .gallery-slider-img{
-
-    width:700px;
-
-    height:420px;
-
-    object-fit:cover;
-
-    border-radius:28px;
-
-    cursor:pointer;
-
-    border:2px solid rgba(200,164,93,.35);
-
+    width: 700px;
+    height: 420px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 28px;
+    cursor: pointer;
+    border: 2px solid rgba(200,164,93,.35);
     box-shadow:
-    0 25px 60px rgba(0,0,0,.35),
-    0 0 25px rgba(200,164,93,.15);
-
-    transition:.4s;
-
+        0 25px 60px rgba(0,0,0,.35),
+        0 0 25px rgba(200,164,93,.15);
+    transition: .4s;
 }
 
 .gallery-slider-img:hover{
-
-    transform:translateY(-5px);
-
+    transform: translateY(-5px);
 }
 
 .gallery-btn{
-
-    width:65px;
-
-    height:65px;
-
-    border:none;
-
-    border-radius:50%;
-
-    background:#c8a45d;
-
-    color:#000;
-
-    font-size:28px;
-
-    font-weight:bold;
-
-    cursor:pointer;
-
-    transition:.3s;
-
-    flex-shrink:0;
-
+    width: 65px;
+    height: 65px;
+    border: none;
+    border-radius: 50%;
+    background: #c8a45d;
+    color: #000;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+    flex-shrink: 0;
 }
 
 .gallery-btn:hover{
-
-    transform:scale(1.1);
-
-    box-shadow:0 0 30px rgba(200,164,93,.5);
-
+    transform: scale(1.1);
+    box-shadow: 0 0 30px rgba(200,164,93,.5);
 }
 
-@media(max-width:768px){
+/* MOBILE */
+@media (max-width:768px){
 
     .gallery-wrapper{
-
-        gap:12px;
-
+        gap: 10px;
     }
 
     .gallery-slider-img{
-
-        width:260px;
-
-        height:320px;
-
+        width: 240px;
+        height: 240px;
+        object-fit: cover;
+        object-position: center;
     }
 
     .gallery-btn{
-
-        width:45px;
-
-        height:45px;
-
-        font-size:20px;
-
+        width: 42px;
+        height: 42px;
+        font-size: 18px;
     }
-
 }
 /* VIDEO MODAL ALWAYS ON TOP */
 

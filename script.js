@@ -413,13 +413,9 @@ const galleryImages = [
     "images/n2.jpeg",
     "images/n1.jpeg",
     "images/n4.jpeg",
-    "images/n5.jpeg",
-    "images/n6.jpeg",
-    "images/n7.jpeg",
-    "images/n8.jpeg",
     "images/n9.jpeg",
-    "images/n10.jpeg",
-    "images/n11.jpeg"
+    "images/n10.jpeg"
+    
 ];
 
 let galleryIndex = 0;
