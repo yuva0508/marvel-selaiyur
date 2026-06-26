@@ -413,8 +413,7 @@ const galleryImages = [
     "images/n2.jpeg",
     "images/n1.jpeg",
     "images/n4.jpeg",
-    "images/n9.jpeg",
-    "images/n10.jpeg"
+    "images/n9.jpeg"
     
 ];
 
