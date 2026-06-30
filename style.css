@@ -2431,14 +2431,7 @@
         font-size: 18px;
     }
 }
-/* VIDEO MODAL ALWAYS ON TOP */
 
-#videoModal{
-    position: fixed !important;
-    inset: 0 !important;
-    z-index: 999999 !important;
-    background: rgba(0,0,0,.96) !important;
-}
 
 /* Prevent any section from covering modal */
 
@@ -2446,13 +2439,11 @@
 #brands,
 #products,
 #reviews,
-.video-card,
 .gallery-wrapper,
 .brand-showcase{
     z-index: auto !important;
 }
 #services,
-#transformations,
 #gallery,
 #brands,
 #products,

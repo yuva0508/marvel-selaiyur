@@ -166,59 +166,7 @@ cardsReveal.forEach((card,index)=>{
 
 });
 
-function openVideo(src){
 
-    const modal = document.getElementById("videoModal");
-    const video = document.getElementById("popupVideo");
-
-    video.src = src;
-
-    modal.classList.remove("hidden");
-    modal.classList.add("flex");
-    video.play();
-
-    document.body.style.overflow = "hidden";
-
-}
-
-function closeVideo() {
-
-    const modal = document.getElementById("videoModal");
-    const video = document.getElementById("popupVideo");
-
-    video.pause();
-    video.currentTime = 0;
-
-    modal.classList.add("hidden");
-    modal.classList.remove("flex");
-    document.body.style.overflow = "auto";
-
-}
-// CLOSE VIDEO ON ESC KEY
-
-document.addEventListener("keydown", (e) => {
-
-    if(e.key === "Escape"){
-        closeVideo();
-    }
-
-});
-
-// CLOSE VIDEO WHEN CLICKING DARK BACKGROUND
-
-const videoModal = document.getElementById("videoModal");
-
-if(videoModal){
-
-    videoModal.addEventListener("click", (e) => {
-
-        if(e.target === videoModal){
-            closeVideo();
-        }
-
-    });
-
-}
 
 const brandTrack = document.getElementById("brandTrack");
 
